@@ -59,4 +59,4 @@
 
 我們將繼續改進我們的框架，並尋求進一步提升模型的準確率。我們也計劃探索其他資料集以測試我們的框架在不同領域的表現。感謝您對我們的工作的關注！
 
-如有任何疑問或進一步的討論，請隨時[聯繫我](https://www.facebook.com/shian.bo.tsz)
+如有任何疑問或進一步的討論，請隨時[聯繫我](https://www.facebook.com/shian.bo.tsz){:target="_blank"}
