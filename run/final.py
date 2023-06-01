@@ -5,6 +5,7 @@ import numpy as np
 import torch
 from torchvision import transforms
 import cv2
+import time
 # ==========================================================================================================
 from preprocess import img_convert
 device = 'cpu'
@@ -95,11 +96,20 @@ frame = cv2.imread('C:\\Users\\Administrator\\Desktop\\ahh\\testdata\\757.jpg')
 # cv2.waitKey(0)  # 等待任意按键继续执行
 
 # ================================================================
+
 trans_image = img_convert(frame)
 # trans_image = img_convert(image)
-print(trans_image)
+# print(trans_image)
+
+
+start_time = time.time()
 
 pred = trained_model(trans_image.unsqueeze(0)) #
 pred_label = pred.max(1)[1]
+
+end_time = time.time()
+prediction_time = end_time - start_time
+print("預測時間:", prediction_time, "秒")
+
 print(pred_label)
 print([inv_cate[int(element)] for element in pred_label])
