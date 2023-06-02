@@ -39,7 +39,7 @@
 > 　├── 1.jpg  
 > 　├── ...   
 > 　├── 999.jpg   
-> 　└── label.txt 
+> 　└── label.txt    
 > mnist_change.ipynb (模型訓練使用)   
 
 ### 資料集 fdata1
